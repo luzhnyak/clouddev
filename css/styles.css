@@ -1,0 +1,255 @@
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+button {
+  cursor: pointer;
+}
+
+img {
+  display: block;
+}
+
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.section {
+  padding-top: 130px;
+  padding-bottom: 130px;
+}
+.container {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+/* ===================== COMPONENTS =====================*/
+
+.section-title {
+  font-weight: 600;
+  font-size: 35px;
+  line-height: 1.5;
+  margin-bottom: 44px;
+}
+
+.section-title-theme-dark {
+  color: #000000;
+}
+
+.section-title-theme-light {
+  color: #ffffff;
+}
+
+.btn {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  padding: 15px 30px;
+  border-radius: 25px;
+}
+
+.btn-dark {
+  background: #00003e;
+  border: 1px solid #ffffff;
+  color: #ffffff;
+}
+.btn-dark:hover,
+.btn-dark:focus {
+  border: 1px solid #000000;
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.btn-light {
+  border: 1px solid #000000;
+  background-color: transparent;
+  color: #000000;
+}
+.btn-light:hover,
+.btn-light:focus {
+  background: #00003e;
+  border: 1px solid #ffffff;
+  color: #ffffff;
+}
+
+/* ===================== /COMPONENTS =====================*/
+
+/* ===================== HEADER =====================*/
+.header-section {
+  display: flex;
+  justify-content: space-between;
+}
+
+.page-nav {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  margin-right: 37px;
+}
+
+.menu-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.authorization {
+  display: flex;
+  align-items: center;
+}
+
+.authorization-btn {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #ffffff;
+  background: linear-gradient(
+    91.24deg,
+    #ffffff -151.39%,
+    #00003e 39.72%,
+    #00003e 60.99%,
+    #00003e 80.28%,
+    #ffffff 231.81%
+  );
+  border-radius: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 110px;
+}
+
+.authorization-item:not(:last-child) {
+  margin-right: 15px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+/* ===================== /HEADER =====================*/
+
+/* ===================== ABOUT =====================*/
+
+.about-section {
+  background-image: url("../images/about-fon.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-top: 125px;
+  padding-bottom: 125px;
+}
+
+.about-suptitle {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.06em;
+  color: #ffffff;
+}
+
+.about-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #ffffff;
+  margin-bottom: 24px;
+  width: 400px;
+}
+
+/* ===================== /ABOUT =====================*/
+
+/* ===================== SERVICED =====================*/
+
+.services-section {
+  background-image: url("../images/services-fon.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-top: 150px;
+  padding-bottom: 150px;
+}
+
+.services-text {
+  font-size: 14px;
+  line-height: 1.5;
+  color: #ffffff;
+  margin-bottom: 24px;
+  width: 443px;
+}
+
+/* ===================== /SERVICES =====================*/
+
+/* ===================== FOOTER =====================*/
+
+.footer-section {
+  background: #000034;
+  padding-top: 113px;
+  padding-bottom: 127px;
+}
+
+.footer-container {
+  display: flex;
+}
+
+.footer-logo-link {
+  display: block;
+  margin-bottom: 47px;
+}
+
+.quicklinks-section {
+  margin-left: 118px;
+  margin-right: 159px;
+}
+
+.footer-text {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.75;
+  color: #9b9b9b;
+}
+
+.footer-title {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 1.09;
+  color: #ffffff;
+  margin-bottom: 30px;
+}
+
+.footer-list-item {
+  margin-bottom: 7px;
+}
+
+.footer-list-link {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 35px;
+  color: #9b9b9b;
+}
+
+/* ===================== /FOOTER =====================*/
