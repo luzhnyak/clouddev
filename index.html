@@ -21,35 +21,43 @@
     <title>CloudDev</title>
   </head>
   <body>
-    <header class="header-section container">
-      <nav class="page-nav">
-        <a href="./"
-          ><img
-            src="./images/logo.png"
-            alt="CloudDev logo"
-            width="194"
-            height="32"
-        /></a>
-        <ul class="menu list">
-          <li class="menu-item"><a class="menu-link link" href="">Home</a></li>
-          <li class="menu-item"><a class="menu-link link" href="">About</a></li>
-          <li class="menu-item"><a class="menu-link link" href="">Cloud</a></li>
-          <li class="menu-item">
-            <a class="menu-link link" href="">Service</a>
+    <header class="header-section">
+      <div class="header-wrapper container">
+        <nav class="page-nav">
+          <a href="./"
+            ><img
+              src="./images/logo.png"
+              alt="CloudDev logo"
+              width="194"
+              height="32"
+          /></a>
+          <ul class="menu list">
+            <li class="menu-item">
+              <a class="menu-link link" href="">Home</a>
+            </li>
+            <li class="menu-item">
+              <a class="menu-link link" href="">About</a>
+            </li>
+            <li class="menu-item">
+              <a class="menu-link link" href="">Cloud</a>
+            </li>
+            <li class="menu-item">
+              <a class="menu-link link" href="">Service</a>
+            </li>
+            <li class="menu-item">
+              <a class="menu-link link" href="">Contact</a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="authorization list">
+          <li class="authorization-item">
+            <button class="authorization-btn" type="button">Login</button>
           </li>
-          <li class="menu-item">
-            <a class="menu-link link" href="">Contact</a>
+          <li class="authorization-item">
+            <button class="authorization-btn" type="button">Sign Up</button>
           </li>
         </ul>
-      </nav>
-      <ul class="authorization list">
-        <li class="authorization-item">
-          <button class="authorization-btn" type="button">Login</button>
-        </li>
-        <li class="authorization-item">
-          <button class="authorization-btn" type="button">Sign Up</button>
-        </li>
-      </ul>
+      </div>
     </header>
     <main>
       <section class="hero-section">
@@ -104,28 +112,26 @@
         </div>
       </section>
       <section class="about-section">
-        <div class="container">
-          <div class="about-wrapper">
-            <div class="about-left-wrappet">
-              <p class="about-suptitle">ABOUT US</p>
-              <h2 class="section-title section-title-theme-light">
-                What makes us unique?
-              </h2>
-              <p class="about-text">
-                Our focus on you, and what you need. We specialize in custom
-                software and offer a personalized experience. We listen to what
-                you need, and we're here to make it work.
-              </p>
-              <button class="btn btn-dark" type="button">Our Values</button>
-            </div>
-            <div>
-              <img
-                src="./images/about/image-4.png"
-                alt=""
-                width="390"
-                height="303"
-              />
-            </div>
+        <div class="about-wrapper container">
+          <div class="about-left-wrappet">
+            <p class="about-suptitle">ABOUT US</p>
+            <h2 class="section-title section-title-theme-light">
+              What makes us unique?
+            </h2>
+            <p class="about-text">
+              Our focus on you, and what you need. We specialize in custom
+              software and offer a personalized experience. We listen to what
+              you need, and we're here to make it work.
+            </p>
+            <button class="btn btn-dark" type="button">Our Values</button>
+          </div>
+          <div class="about-image">
+            <img
+              src="./images/about/image-4.png"
+              alt=""
+              width="532"
+              height="445"
+            />
           </div>
         </div>
       </section>
@@ -209,7 +215,7 @@
         </div>
       </section>
       <section class="contacts-section">
-        <div class="container">
+        <div class="contacts-wrapper container">
           <h2 class="section-title">CONTACT US</h2>
           <p class="contacts-description">
             Looking for the next steps? Send us a message and we will get back
@@ -217,6 +223,7 @@
           </p>
           <button class="btn btn-dark" type="button">Send a Message</button>
         </div>
+        <div class="ellipse-fon"></div>
       </section>
     </main>
     <footer class="footer-section">
