@@ -1,0 +1,87 @@
+/* ===================== HEADER =====================*/
+
+.header-section {
+    background-color: rgba(255, 255, 255, 0.73);
+    border-bottom: 1px solid #b9b9b9;
+    backdrop-filter: blur(15.5px);
+    padding: 20px 0;
+}
+
+.header-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.page-nav {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+
+
+.menu {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    @media only screen and (max-width: 767px) {
+        display: none;
+    }
+}
+
+.menu-item:not(:last-child) {
+    margin-right: 30px;
+}
+
+.menu-link {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #000000;
+}
+
+.menu-link:hover,
+.menu-link:focus {
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.auth {
+    display: flex;
+    align-items: center;
+    margin-left: 37px;
+
+    @media only screen and (max-width: 1095px) {
+        display: none;
+    }
+}
+
+.auth-btn {
+    font-family: "Poppins";
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.2;
+    color: #ffffff;
+    background: linear-gradient(91.24deg,
+            #ffffff -151.39%,
+            #00003e 39.72%,
+            #00003e 60.99%,
+            #00003e 80.28%,
+            #ffffff 231.81%);
+    border-radius: 20px;
+    padding-top: 9px;
+    padding-bottom: 10px;
+    width: 110px;
+}
+
+.auth-item:not(:last-child) {
+    margin-right: 15px;
+    // padding-top: 20px;
+    // padding-bottom: 20px;
+}
+
+/* ===================== /HEADER =====================*/

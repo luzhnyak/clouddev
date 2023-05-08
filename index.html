@@ -24,7 +24,7 @@
     <header class="header-section">
       <div class="header-wrapper container">
         <nav class="page-nav">
-          <a href="./"
+          <a class="logo" href="./"
             ><img
               src="./images/logo.png"
               alt="CloudDev logo"
@@ -49,12 +49,12 @@
             </li>
           </ul>
         </nav>
-        <ul class="authorization list">
-          <li class="authorization-item">
-            <button class="authorization-btn" type="button">Login</button>
+        <ul class="auth list">
+          <li class="auth-item">
+            <button class="auth-btn" type="button">Login</button>
           </li>
-          <li class="authorization-item">
-            <button class="authorization-btn" type="button">Sign Up</button>
+          <li class="auth-item">
+            <button class="auth-btn" type="button">Sign Up</button>
           </li>
         </ul>
       </div>
@@ -81,34 +81,35 @@
               </button>
             </div>
           </div>
-          <ul class="hero-images list">
-            <li class="hero-image-item">
+          <div class="hero-images">
+            <div class="hero-image-first">
               <img
                 src="./images/hero/image-1.png"
                 alt=""
                 width="399"
                 height="267"
               />
-            </li>
+            </div>
+            <ul class="hero-image-second list">
+              <li class="hero-image-item">
+                <img
+                  src="./images/hero/image-2.png"
+                  alt=""
+                  width="196"
+                  height="132"
+                />
+              </li>
 
-            <li class="hero-image-item">
-              <img
-                src="./images/hero/image-2.png"
-                alt=""
-                width="196"
-                height="132"
-              />
-            </li>
-
-            <li class="hero-image-item">
-              <img
-                src="./images/hero/image-3.png"
-                alt=""
-                width="196"
-                height="132"
-              />
-            </li>
-          </ul>
+              <li class="hero-image-item">
+                <img
+                  src="./images/hero/image-3.png"
+                  alt=""
+                  width="196"
+                  height="132"
+                />
+              </li>
+            </ul>
+          </div>
         </div>
       </section>
       <section class="about-section">
@@ -214,6 +215,7 @@
           </div>
         </div>
       </section>
+
       <section class="contacts-section">
         <div class="contacts-wrapper container">
           <h2 class="section-title">CONTACT US</h2>

@@ -1,0 +1,101 @@
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.section {
+  padding-top: 130px;
+  padding-bottom: 130px;
+}
+
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  outline: 1px solid #8958fe;
+
+  @media only screen and (min-width: 428px) {
+    width: 428px;
+    margin: 0 auto;
+  }
+
+  @media only screen and (min-width: 768px) {     
+    width: 768px;        
+  }
+
+  @media only screen and (min-width: 1095px) {  
+    width: 1095px;          
+  }
+}
+
+
+
+
+
+/* ===================== COMPONENTS =====================*/
+
+.section-title {
+  font-weight: 600;
+  font-size: 35px;
+  line-height: 1.5;
+}
+
+.section-title::after {
+  display: block;
+  content: "";
+  height: 10px;
+  background-image: url("../images/line.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: left;
+  margin-top: 22px;
+  margin-bottom: 22px;
+}
+
+.section-title-theme-dark {
+  color: #000000;
+}
+
+.section-title-theme-light {
+  color: #ffffff;
+}
+
+.btn {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  padding: 15px 30px;
+  border-radius: 25px;
+}
+
+.btn-dark {
+  background: #00003e;
+  border: 1px solid #ffffff;
+  color: #ffffff;
+}
+.btn-dark:hover,
+.btn-dark:focus {
+  border: 1px solid #000000;
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.btn-light {
+  border: 1px solid #000000;
+  background-color: transparent;
+  color: #000000;
+}
+.btn-light:hover,
+.btn-light:focus {
+  background: #00003e;
+  border: 1px solid #ffffff;
+  color: #ffffff;
+}
+
+/* ===================== /COMPONENTS =====================*/
+
+
+
+
+
+

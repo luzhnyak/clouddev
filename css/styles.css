@@ -1,7 +1,3 @@
-body {
-  font-family: "Poppins", sans-serif;
-}
-
 h1,
 h2,
 h3,
@@ -34,19 +30,38 @@ img {
   text-decoration: none;
 }
 
+body {
+  font-family: "Poppins", sans-serif;
+}
+
 .section {
   padding-top: 130px;
   padding-bottom: 130px;
 }
+
 .container {
-  width: 1095px;
-  margin-left: auto;
-  margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
+  outline: 1px solid #8958fe;
 }
-/* ===================== COMPONENTS =====================*/
+@media only screen and (min-width: 428px) {
+  .container {
+    width: 428px;
+    margin: 0 auto;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+@media only screen and (min-width: 1095px) {
+  .container {
+    width: 1095px;
+  }
+}
 
+/* ===================== COMPONENTS =====================*/
 .section-title {
   font-weight: 600;
   font-size: 35px;
@@ -88,6 +103,7 @@ img {
   border: 1px solid #ffffff;
   color: #ffffff;
 }
+
 .btn-dark:hover,
 .btn-dark:focus {
   border: 1px solid #000000;
@@ -100,6 +116,7 @@ img {
   background-color: transparent;
   color: #000000;
 }
+
 .btn-light:hover,
 .btn-light:focus {
   background: #00003e;
@@ -108,12 +125,13 @@ img {
 }
 
 /* ===================== /COMPONENTS =====================*/
-
 /* ===================== HEADER =====================*/
 .header-section {
   background-color: rgba(255, 255, 255, 0.73);
   border-bottom: 1px solid #b9b9b9;
-  backdrop-filter: blur(15.5px);
+  -webkit-backdrop-filter: blur(15.5px);
+          backdrop-filter: blur(15.5px);
+  padding: 20px 0;
 }
 
 .header-wrapper {
@@ -131,7 +149,13 @@ img {
   display: flex;
   align-items: center;
   margin-left: auto;
-  margin-right: 37px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+@media only screen and (max-width: 767px) {
+  .menu {
+    display: none;
+  }
 }
 
 .menu-item:not(:last-child) {
@@ -152,71 +176,81 @@ img {
   color: rgba(0, 0, 0, 0.8);
 }
 
-.authorization {
+.auth {
   display: flex;
   align-items: center;
+  margin-left: 37px;
+}
+@media only screen and (max-width: 1095px) {
+  .auth {
+    display: none;
+  }
 }
 
-.authorization-btn {
+.auth-btn {
   font-family: "Poppins";
-  font-style: normal;
   font-weight: 400;
   font-size: 14px;
-  line-height: 1.5;
+  line-height: 1.2;
   color: #ffffff;
-  background: linear-gradient(
-    91.24deg,
-    #ffffff -151.39%,
-    #00003e 39.72%,
-    #00003e 60.99%,
-    #00003e 80.28%,
-    #ffffff 231.81%
-  );
+  background: linear-gradient(91.24deg, #ffffff -151.39%, #00003e 39.72%, #00003e 60.99%, #00003e 80.28%, #ffffff 231.81%);
   border-radius: 20px;
-  padding-top: 10px;
+  padding-top: 9px;
   padding-bottom: 10px;
   width: 110px;
 }
 
-.authorization-item:not(:last-child) {
+.auth-item:not(:last-child) {
   margin-right: 15px;
-  padding-top: 20px;
-  padding-bottom: 20px;
 }
 
 /* ===================== /HEADER =====================*/
-
 /* ===================== /HERO =====================*/
-
 .hero-wrapper {
-  display: flex;
-  justify-content: space-between;
-  padding-top: 70px;
-  padding-bottom: 130px;
-
-  background-image: url("../images/hero/vector-1.png"),
-    url("../images/hero/vector-2.png"), url("../images/hero/vector-3.png"),
-    url("../images/hero/vector-4.png"), url("../images/hero/vector-5.png");
+  padding-top: 30px;
+  padding-bottom: 60px;
+  background-image: url("../images/hero/vector-1.png"), url("../images/hero/vector-2.png"), url("../images/hero/vector-3.png"), url("../images/hero/vector-4.png"), url("../images/hero/vector-5.png");
   background-repeat: no-repeat;
-
-  background-position: 1044px 71px, 534px 340px, 615px 163px, 576px 534px,
-    613px 451px;
+  background-position: 1044px 71px, 534px 340px, 615px 163px, 576px 534px, 613px 451px;
 }
-
+@media only screen and (min-width: 768px) {
+  .hero-wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 70px;
+    padding-bottom: 130px;
+  }
+}
+.hero-left-wrapper {
+  margin-bottom: 30px;
+}
+@media only screen and (min-width: 768px) {
+  .hero-left-wrapper {
+    margin-bottom: 0;
+  }
+}
 .hero-section {
   background-image: url("../images/hero/ellipse-6.png");
   background-repeat: no-repeat;
-
   background-position: 0px 0px;
 }
 
 .hero-title {
-  width: 584px;
   font-weight: 600;
   font-size: 40px;
   line-height: 1.5;
   color: #000000;
-  margin-top: 105px;
+}
+@media only screen and (min-width: 768px) {
+  .hero-title {
+    margin-right: 20px;
+  }
+}
+@media only screen and (min-width: 1095px) {
+  .hero-title {
+    width: 584px;
+    margin-top: 105px;
+  }
 }
 
 .hero-title-blue {
@@ -224,21 +258,54 @@ img {
 }
 
 .hero-description {
-  width: 484px;
   font-size: 18px;
   line-height: 1.78;
   color: #000000;
   margin-bottom: 22px;
 }
+@media only screen and (min-width: 768px) {
+  .hero-description {
+    margin-right: 20px;
+  }
+}
+@media only screen and (min-width: 1095px) {
+  .hero-description {
+    width: 484px;
+  }
+}
 
 .hero-images {
-  width: 400px;
-  display: flex;
-  gap: 8px;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  margin-top: 57px;
+  margin-bottom: 30px;
+}
+@media only screen and (min-width: 1095px) {
+  .hero-images {
+    width: 400px;
+  }
+}
+
+.hero-image-first {
+  margin-bottom: 9px;
+}
+@media only screen and (min-width: 768px) and (max-width: 1094px) {
+  .hero-image-first {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 1095px) {
+  .hero-image-second {
+    display: flex;
+    gap: 9px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .hero-image-second {
+    display: none;
+  }
+}
+
+.hero-image-item:first-child {
+  margin-bottom: 16px;
 }
 
 .hero-btn-wrapper {
@@ -247,9 +314,7 @@ img {
 }
 
 /* ===================== /HERO =====================*/
-
 /* ===================== ABOUT =====================*/
-
 .about-section {
   /* background-color: #9b9b9b; */
   background-image: url("../images/about/about-fon.png");
@@ -270,7 +335,12 @@ img {
   line-height: 1.5;
   letter-spacing: 0.06em;
   color: #ffffff;
-  margin-top: 125px;
+  margin-top: 65px;
+}
+@media only screen and (min-width: 1095px) {
+  .about-suptitle {
+    margin-top: 125px;
+  }
 }
 
 .about-text {
@@ -285,11 +355,20 @@ img {
 .about-image {
   margin-top: 56px;
 }
+@media only screen and (max-width: 767px) {
+  .about-image {
+    display: none;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1094px) {
+  .about-image img {
+    width: 300px;
+    height: auto;
+  }
+}
 
 /* ===================== /ABOUT =====================*/
-
 /* ===================== WHAT-IS =====================*/
-
 .what-is-wrapper {
   background-image: url("../images/what-is/what-is-bg.png");
   background-position: right;
@@ -298,6 +377,18 @@ img {
   justify-content: space-between;
   align-items: center;
   text-align: right;
+}
+
+@media only screen and (max-width: 767px) {
+  .what-is-left-wrapper {
+    display: none;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1094px) {
+  .what-is-left-wrapper img {
+    width: 300px;
+    height: auto;
+  }
 }
 
 .what-is-suptitle {
@@ -311,8 +402,12 @@ img {
 .what-is-description {
   font-size: 14px;
   line-height: 1.5;
-  width: 443px;
   margin-bottom: 22px;
+}
+@media only screen and (min-width: 768px) {
+  .what-is-description {
+    width: 443px;
+  }
 }
 
 .what-is-section .section-title::after {
@@ -320,14 +415,11 @@ img {
 }
 
 /* ===================== /WHAT-IS =====================*/
-
 /* ===================== SERVICES =====================*/
-
 .services-section {
   background-image: url("../images/services-fon.png");
   background-repeat: no-repeat;
   background-position: top center;
-
   padding-top: 127px;
   padding-bottom: 106px;
 }
@@ -342,14 +434,33 @@ img {
   line-height: 1.5;
   color: #ffffff;
   margin-bottom: 24px;
-  width: 443px;
+}
+@media only screen and (min-width: 768px) {
+  .services-text {
+    width: 443px;
+  }
 }
 
 .services-left-wrapper {
   position: relative;
 }
+
 .services-right-wrapper {
   position: relative;
+}
+@media only screen and (max-width: 767px) {
+  .services-right-wrapper {
+    display: none;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1094px) {
+  .services-right-wrapper .image-6 {
+    width: 300px;
+    height: auto;
+  }
+  .services-right-wrapper .ellipse-1 {
+    display: none;
+  }
 }
 
 .image-6 {
@@ -408,9 +519,7 @@ img {
 }
 
 /* ===================== /SERVICES =====================*/
-
 /* ===================== CONTACT =====================*/
-
 .contacts-section {
   position: relative;
   text-align: center;
@@ -424,11 +533,7 @@ img {
   height: 535px;
   border-radius: 50%;
   border: #000000 solid 1px;
-  background-image: linear-gradient(
-    180deg,
-    rgba(137, 88, 254, 0.66) 0%,
-    rgba(35, 193, 218, 0.66) 100%
-  );
+  background-image: linear-gradient(180deg, rgba(137, 88, 254, 0.66) 0%, rgba(35, 193, 218, 0.66) 100%);
   /* background-position: 260px -260px; */
   /* background-size: 535px; */
   background-repeat: no-repeat;
@@ -451,16 +556,18 @@ img {
 .contacts-description {
   font-size: 14px;
   line-height: 1.5;
-  width: 518px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 30px;
 }
+@media only screen and (min-width: 768px) {
+  .contacts-description {
+    width: 518px;
+  }
+}
 
 /* ===================== /CONTACT =====================*/
-
 /* ===================== FOOTER =====================*/
-
 .footer-section {
   position: relative;
   background: #000034;
@@ -471,16 +578,26 @@ img {
 
 .footer-container {
   display: flex;
+  flex-wrap: wrap;
 }
-
 .footer-logo-link {
   display: block;
   margin-bottom: 47px;
 }
 
 .quicklinks-section {
-  margin-left: 118px;
-  margin-right: 159px;
+  margin-right: 30px;
+}
+@media only screen and (min-width: 768px) {
+  .quicklinks-section {
+    margin-right: 159px;
+  }
+}
+@media only screen and (min-width: 1095px) {
+  .quicklinks-section {
+    margin-left: 118px;
+    margin-right: 159px;
+  }
 }
 
 .footer-text {
@@ -488,6 +605,12 @@ img {
   font-size: 20px;
   line-height: 1.75;
   color: #9b9b9b;
+  margin-bottom: 30px;
+}
+@media only screen and (min-width: 768px) {
+  .footer-text {
+    width: 480px;
+  }
 }
 
 .footer-title {
@@ -509,4 +632,4 @@ img {
   color: #9b9b9b;
 }
 
-/* ===================== /FOOTER =====================*/
+/* ===================== /FOOTER =====================*//*# sourceMappingURL=styles.css.map */
