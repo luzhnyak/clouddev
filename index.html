@@ -49,6 +49,47 @@
             </li>
           </ul>
         </nav>
+
+        <!-- Mobile menu -->
+        <div
+          class="mobile-menu-container js-menu-container container"
+          id="mobile-menu"
+        >
+          <button class="close-menu js-close-menu">
+            <svg class="close-modal-icon" width="8" height="8">
+              <use href="./images/icons.svg#icon-close"></use>
+            </svg>
+          </button>
+
+          <ul class="mobile-menu list">
+            <li class="mobile-menu-item">
+              <a class="mobile-menu-link link" href="">Home</a>
+            </li>
+            <li class="mobile-menu-item">
+              <a class="mobile-menu-link link" href="">About</a>
+            </li>
+            <li class="mobile-menu-item">
+              <a class="mobile-menu-link link" href="">Cloud</a>
+            </li>
+            <li class="mobile-menu-item">
+              <a class="mobile-menu-link link" href="">Service</a>
+            </li>
+            <li class="mobile-menu-item">
+              <a class="mobile-menu-link link" href="">Contact</a>
+            </li>
+          </ul>
+        </div>
+
+        <button
+          class="menu-open-btn js-open-menu"
+          type="button"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg class="burger-icon" width="32" height="32">
+            <use class="" href="./images/icons.svg#icon-bars"></use>
+          </svg>
+        </button>
         <ul class="auth list">
           <li class="auth-item">
             <button class="auth-btn" type="button">Login</button>
@@ -177,20 +218,6 @@
                 <button class="btn btn-dark" type="button">
                   More About Services
                 </button>
-                <!-- <img
-                class="ellipse-4"
-                src="./images/services/ellipse-4.png"
-                alt=""
-                width="83"
-                height="83"
-              />
-              <img
-                class="ellipse-5"
-                src="./images/services/ellipse-5.png"
-                alt=""
-                width="27"
-                height="27"
-              /> -->
               </div>
               <div class="services-right-wrapper">
                 <img
@@ -200,34 +227,13 @@
                   width="390"
                   height="303"
                 />
-                <!-- <img
-                class="ellipse-1"
-                src="./images/services/ellipse-1.png"
-                alt=""
-                width="59"
-                height="59"
-              />
-              <img
-                class="ellipse-2"
-                src="./images/services/ellipse-2.png"
-                alt=""
-                width="86"
-                height="86"
-              />
-              <img
-                class="ellipse-3"
-                src="./images/services/ellipse-3.png"
-                alt=""
-                width="22"
-                height="22"
-              /> -->
               </div>
             </div>
           </div>
         </section>
 
         <section class="contacts-section">
-          <div class="contacts-wrapper container">
+          <div class="contacts-container container">
             <h2 class="section-title">CONTACT US</h2>
             <p class="contacts-description">
               Looking for the next steps? Send us a message and we will get back
@@ -235,13 +241,12 @@
             </p>
             <button class="btn btn-dark" type="button">Send a Message</button>
           </div>
-          <!-- <div class="ellipse-fon"></div> -->
         </section>
       </div>
     </main>
     <footer class="footer-section">
       <div class="container footer-container">
-        <div>
+        <div class="footer-logo-wrapper">
           <a class="footer-logo-link" href="">
             <img
               class="footer-logo-img"
@@ -323,5 +328,13 @@
         </section>
       </div>
     </footer>
+
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="./js/mobile-menu.js"></script>
   </body>
 </html>

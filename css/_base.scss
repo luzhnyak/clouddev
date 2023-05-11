@@ -12,8 +12,8 @@ body {
   padding-right: 15px;
   // outline: 1px solid #8958fe;
 
-  @media only screen and (min-width: 428px) {
-    width: 428px;
+  @media only screen and (min-width: 425px) {
+    width: 425px;
     margin: 0 auto;
   }
 
@@ -65,8 +65,7 @@ body {
   font-size: 16px;
   line-height: 1.5;
   padding: 14px 30px;
-  border-radius: 25px;
-  // line-height: 0;
+  border-radius: 25px;  
 }
 
 .btn-dark {

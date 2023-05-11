@@ -1,0 +1,73 @@
+/* ---Mobile menu--- */
+@media screen and (max-width: 767px) {
+  .mobile-menu-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 80px 40px 40px 40px;
+    background-color: var(--white-color);
+    z-index: 999;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transform: translateX(100%);
+    transition: transform 250ms ease-in-out;
+  }
+  .mobile-menu-container.is-open {
+    transform: translateX(0);
+  }
+  .close-menu {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: 0;
+    top: 0;
+    width: 24px;
+    height: 24px;
+    margin-right: 20px;
+    margin-top: 28px;
+    background-color: var(--white-color);
+    border-radius: 50%;
+    color: var(--dark-color);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .mobile-menu-item:not(:last-child) {
+    margin-bottom: 40px;
+  }
+  .mobile-menu-link {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    color: var(--dark-color);
+  }
+  .mobile-active {
+    color: var(--pressed-state-color);
+  }
+  .mobile-menu-link:hover,
+  .mobile-menu-link:focus {
+    color: var(--pressed-state-color);
+  }
+  .mobile-contacts {
+    margin-top: auto;
+    margin-bottom: 48px;
+  }
+  .mobile-phone-link {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    color: var(--primary-brand-color);
+  }
+  .mobile-email-link {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    color: var(--general-font-color);
+  }
+  .mobile-menu-container .social-list {
+    gap: 56px;
+  }
+}/*# sourceMappingURL=mobile-menu.css.map */

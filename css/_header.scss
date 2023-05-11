@@ -79,9 +79,21 @@
 }
 
 .auth-item:not(:last-child) {
-    margin-right: 15px;
-    // padding-top: 20px;
-    // padding-bottom: 20px;
+    margin-right: 15px;    
 }
+
+.menu-open-btn {
+    background-color: transparent;
+    border: 0;
+    margin-left: auto;
+    padding: 0;
+    line-height: 0;
+
+    @media screen and (min-width: 768px) {        
+        display: none;
+    }
+}
+
+@import "_mobile-menu";
 
 /* ===================== /HEADER =====================*/

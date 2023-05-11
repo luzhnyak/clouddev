@@ -1,14 +1,26 @@
 /* ===================== /HERO =====================*/
 
-.hero-section{  
-    background-image: url("../images/hero/bg-hero.png");
-    background-repeat: no-repeat;    
-    background-position: top center;
+.hero-section{      
+    @media only screen and (max-width: 767px) {
+    .btn {        
+        font-size: 12px;
+        line-height: 1.5;
+        padding: 14px 15px;        
+    }
+}
+
+    @media only screen and (min-width: 768px) {
+        background-image: url("../images/hero/bg-hero.png");
+        background-repeat: no-repeat;
+        background-position: top center;
+    }
+    
+    
 }
 
 .hero-container {
   
-    padding-top: 30px;
+    padding-top: 60px;
     padding-bottom: 60px;
  
 
@@ -49,9 +61,10 @@
     font-size: 40px;
     line-height: 1.5;
     color: #000000;    
+    margin-bottom: 16px;
 
     @media only screen and (min-width: 768px) {
-        // width: 484px;
+        margin-bottom: 0px;
         margin-right: 20px;
     }
 
@@ -83,7 +96,7 @@
 }
 
 .hero-images {
-    margin-bottom: 30px;
+    margin-bottom: 30px;    
     // outline: 1px solid #8958fe;
     // display: flex;
     // gap: 8px;
@@ -103,13 +116,13 @@
 }
 
 .hero-image-first {
-
     margin-bottom: 9px;
-    // img {
-    //     @media only screen and (max-width: 1094px) {
-    //         height: 132px;
-    //     }
-    // }
+    img {
+        @media only screen and (max-width: 767px) {
+            width: 100%;
+            height: auto;
+        }
+    }
 
     // @media only screen and (max-width: 767px) {
     //     display: none;
@@ -181,7 +194,10 @@
     line-height: 1.5;
     color: #ffffff;
     margin-bottom: 24px;
-    width: 444px;
+    
+    @media only screen and (min-width: 768px) {
+        width: 444px;
+    }
 }
 
 .about-image {
@@ -200,11 +216,14 @@
 
 /* ===================== WHAT-IS =====================*/
 
-.what-is-section {
-    // display: none;
+.what-is-section {        
+    padding-bottom: 60px;
+    @media only screen and (min-width: 768px) {
     background-image: url("../images/what-is/bg-what-is.png");
     background-position: center top;
     background-repeat: no-repeat;
+    padding-bottom: 0;
+}
 }
 
 .what-is-wrapper {
@@ -261,19 +280,24 @@
 /* ===================== SERVICES =====================*/
 
 .services-contact-wrapper{
-    background-image: url("../images/services/bg-serv-cont.jpg");
-    background-repeat: no-repeat;
-    background-position: top center;
+    @media only screen and (min-width: 768px) {
+        background-image: url("../images/services/bg-serv-cont.jpg");
+        background-repeat: no-repeat;
+        background-position: top center;
+    }
+    
 }
 
 .services-section {
-    // display: none;
-    // background-image: url("../images/services/bg-services.png");
-    // background-repeat: no-repeat;
-    // background-position: top center;
-
-    padding-top: 127px;
-    padding-bottom: 106px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: #03033E;
+    @media only screen and (min-width: 768px) {        
+        padding-top: 127px;
+        padding-bottom: 106px;
+        background-color: transparent;
+    }
+    
 }
 
 .services-wrapper {
@@ -329,36 +353,14 @@
 
 /* ===================== CONTACT =====================*/
 
-.contacts-section {
-    // display: none;
-    position: relative;
+.contacts-section {        
+    padding-top: 60px;
+    padding-bottom: 60px;        
     text-align: center;
-}
-
-.ellipse-fon {
-    position: absolute;
-    top: 200px;
-    left: -260px;
-    width: 535px;
-    height: 535px;
-    border-radius: 50%;
-    border: #000000 solid 1px;
-    background-image: linear-gradient(180deg,
-            rgba(137, 88, 254, 0.66) 0%,
-            rgba(35, 193, 218, 0.66) 100%);
-    /* background-position: 260px -260px; */
-    /* background-size: 535px; */
-    background-repeat: no-repeat;
-    z-index: 0;
-    filter: blur(84.5px);
-}
-
-.contacts-wrapper {
-    // background-image: url("../images/contacts/contacts-bg.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    padding-top: 100px;
-    padding-bottom: 100px;
+    @media only screen and (min-width: 768px) {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
 }
 
 .contacts-section .section-title::after {
@@ -375,7 +377,5 @@
         width: 518px;
     }
 }
-
-
 
 /* ===================== /CONTACT =====================*/
