@@ -42,7 +42,6 @@ body {
 .container {
   padding-left: 15px;
   padding-right: 15px;
-  outline: 1px solid #8958fe;
 }
 @media only screen and (min-width: 428px) {
   .container {
@@ -94,7 +93,7 @@ body {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
-  padding: 15px 30px;
+  padding: 14px 30px;
   border-radius: 25px;
 }
 
@@ -122,6 +121,33 @@ body {
   background: #00003e;
   border: 1px solid #ffffff;
   color: #ffffff;
+}
+
+.social-list {
+  margin-top: 8px;
+  display: flex;
+  gap: 24px;
+}
+
+.social-link {
+  background-color: #fff;
+  color: #9694E7;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.social-icon {
+  fill: currentColor;
+}
+
+.social-link:hover,
+.social-link:focus {
+  background-color: #dddada;
 }
 
 /* ===================== /COMPONENTS =====================*/
@@ -206,21 +232,31 @@ body {
 
 /* ===================== /HEADER =====================*/
 /* ===================== /HERO =====================*/
-.hero-wrapper {
+.hero-section {
+  background-image: url("../images/hero/bg-hero.png");
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
+.hero-container {
   padding-top: 30px;
   padding-bottom: 60px;
-  background-image: url("../images/hero/vector-1.png"), url("../images/hero/vector-2.png"), url("../images/hero/vector-3.png"), url("../images/hero/vector-4.png"), url("../images/hero/vector-5.png");
-  background-repeat: no-repeat;
-  background-position: 1044px 71px, 534px 340px, 615px 163px, 576px 534px, 613px 451px;
 }
 @media only screen and (min-width: 768px) {
-  .hero-wrapper {
+  .hero-container {
     display: flex;
     justify-content: space-between;
     padding-top: 70px;
     padding-bottom: 130px;
   }
 }
+@media only screen and (min-width: 1095px) {
+  .hero-container {
+    padding-top: 128px;
+    padding-bottom: 130px;
+  }
+}
+
 .hero-left-wrapper {
   margin-bottom: 30px;
 }
@@ -229,12 +265,6 @@ body {
     margin-bottom: 0;
   }
 }
-.hero-section {
-  background-image: url("../images/hero/ellipse-6.png");
-  background-repeat: no-repeat;
-  background-position: 0px 0px;
-}
-
 .hero-title {
   font-weight: 600;
   font-size: 40px;
@@ -249,7 +279,7 @@ body {
 @media only screen and (min-width: 1095px) {
   .hero-title {
     width: 584px;
-    margin-top: 105px;
+    margin-top: 48px;
   }
 }
 
@@ -276,6 +306,11 @@ body {
 
 .hero-images {
   margin-bottom: 30px;
+}
+@media only screen and (min-width: 768px) {
+  .hero-images {
+    margin-bottom: 0px;
+  }
 }
 @media only screen and (min-width: 1095px) {
   .hero-images {
@@ -316,17 +351,16 @@ body {
 /* ===================== /HERO =====================*/
 /* ===================== ABOUT =====================*/
 .about-section {
-  /* background-color: #9b9b9b; */
-  background-image: url("../images/about/about-fon.png");
+  background-image: url("../images/about/bg-about.png");
   background-repeat: no-repeat;
   background-position: center top;
-  padding-top: 0px;
-  padding-bottom: 0px;
 }
 
-.about-wrapper {
+.about-container {
   display: flex;
   justify-content: space-between;
+  padding-top: 104px;
+  padding-bottom: 104px;
 }
 
 .about-suptitle {
@@ -335,11 +369,10 @@ body {
   line-height: 1.5;
   letter-spacing: 0.06em;
   color: #ffffff;
-  margin-top: 65px;
 }
 @media only screen and (min-width: 1095px) {
   .about-suptitle {
-    margin-top: 125px;
+    margin-top: 21px;
   }
 }
 
@@ -349,12 +382,9 @@ body {
   line-height: 1.5;
   color: #ffffff;
   margin-bottom: 24px;
-  width: 400px;
+  width: 444px;
 }
 
-.about-image {
-  margin-top: 56px;
-}
 @media only screen and (max-width: 767px) {
   .about-image {
     display: none;
@@ -369,10 +399,13 @@ body {
 
 /* ===================== /ABOUT =====================*/
 /* ===================== WHAT-IS =====================*/
-.what-is-wrapper {
-  background-image: url("../images/what-is/what-is-bg.png");
-  background-position: right;
+.what-is-section {
+  background-image: url("../images/what-is/bg-what-is.png");
+  background-position: center top;
   background-repeat: no-repeat;
+}
+
+.what-is-wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -388,6 +421,11 @@ body {
   .what-is-left-wrapper img {
     width: 300px;
     height: auto;
+  }
+}
+@media only screen and (min-width: 1095px) {
+  .what-is-left-wrapper {
+    margin-left: -12px;
   }
 }
 
@@ -416,10 +454,13 @@ body {
 
 /* ===================== /WHAT-IS =====================*/
 /* ===================== SERVICES =====================*/
-.services-section {
-  background-image: url("../images/services-fon.png");
+.services-contact-wrapper {
+  background-image: url("../images/services/bg-serv-cont.jpg");
   background-repeat: no-repeat;
   background-position: top center;
+}
+
+.services-section {
   padding-top: 127px;
   padding-bottom: 106px;
 }
@@ -468,54 +509,9 @@ body {
   z-index: 10;
 }
 
-.ellipse-1 {
-  z-index: 100;
-  position: absolute;
-  top: 272px;
-  left: 358px;
-  /* margin-top: -40px;
-  margin-left: -50px; */
-}
-
-.ellipse-2 {
-  z-index: 1;
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  margin-top: -40px;
-  margin-left: -50px;
-}
-
-.ellipse-3 {
-  z-index: 1;
-  position: absolute;
-  top: -56px;
-  left: 40px;
-  /* margin-top: -40px;
-  margin-left: -50px; */
-}
-
 .services-section .section-title {
   position: relative;
   z-index: 100;
-}
-
-.ellipse-4 {
-  z-index: 1;
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  margin-top: -30px;
-  margin-left: -60px;
-}
-
-.ellipse-5 {
-  z-index: 1;
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  margin-top: 60px;
-  margin-left: -80px;
 }
 
 /* ===================== /SERVICES =====================*/
@@ -542,7 +538,6 @@ body {
 }
 
 .contacts-wrapper {
-  background-image: url("../images/contacts/contacts-bg.png");
   background-position: center;
   background-repeat: no-repeat;
   padding-top: 100px;

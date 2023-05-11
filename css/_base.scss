@@ -10,7 +10,7 @@ body {
 .container {
   padding-left: 15px;
   padding-right: 15px;
-  outline: 1px solid #8958fe;
+  // outline: 1px solid #8958fe;
 
   @media only screen and (min-width: 428px) {
     width: 428px;
@@ -64,8 +64,9 @@ body {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
-  padding: 15px 30px;
+  padding: 14px 30px;
   border-radius: 25px;
+  // line-height: 0;
 }
 
 .btn-dark {
@@ -90,6 +91,33 @@ body {
   background: #00003e;
   border: 1px solid #ffffff;
   color: #ffffff;
+}
+
+.social-list {
+  margin-top: 8px;
+  display: flex;
+  gap: 24px;  
+}
+
+.social-link {
+  background-color: #fff;
+  color: #9694E7;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.social-icon {
+  fill: currentColor;
+}
+
+.social-link:hover,
+.social-link:focus {
+  background-color: #dddada;  
 }
 
 /* ===================== /COMPONENTS =====================*/
