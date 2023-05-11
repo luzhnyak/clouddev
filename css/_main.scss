@@ -13,9 +13,7 @@
         background-image: url("../images/hero/bg-hero.png");
         background-repeat: no-repeat;
         background-position: top center;
-    }
-    
-    
+    }    
 }
 
 .hero-container {
@@ -49,13 +47,6 @@
     }
 }
 
-// .hero-section {
-//     background-image: url("../images/hero/ellipse-6.png");
-//     background-repeat: no-repeat;
-
-//     background-position: 0px 0px;
-// }
-
 .hero-title {
     font-weight: 600;
     font-size: 40px;
@@ -84,10 +75,8 @@
     color: #000000;
     margin-bottom: 22px;
 
-    @media only screen and (min-width: 768px) {
-        // width: 384px;
-        margin-right: 20px;
-        // margin-bottom: 0;
+    @media only screen and (min-width: 768px) {        
+        margin-right: 20px;        
     }
 
     @media only screen and (min-width: 1095px) {
@@ -97,17 +86,8 @@
 
 .hero-images {
     margin-bottom: 30px;    
-    // outline: 1px solid #8958fe;
-    // display: flex;
-    // gap: 8px;
-    // justify-content: center;
-    // align-items: center;
-    // flex-wrap: wrap;
-    // margin-top: 57px;
     @media only screen and (min-width: 768px) {
-        margin-bottom: 0px;
-            // width: 384px;
-        // margin-right: 20px;
+        margin-bottom: 0px;            
     }
     
     @media only screen and (min-width: 1095px) {
@@ -124,13 +104,9 @@
         }
     }
 
-    // @media only screen and (max-width: 767px) {
-    //     display: none;
-    // }
 
     @media only screen and (min-width: 768px) and (max-width: 1094px) {        
-        display: none;    
-        // width: 200px;
+        display: none;            
     }
 }
 
