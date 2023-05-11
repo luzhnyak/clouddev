@@ -170,8 +170,13 @@
 .about-container {
     display: flex;
     justify-content: space-between;
-    padding-top: 104px;
-    padding-bottom: 104px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    @media only screen and (min-width: 768px) {
+        padding-top: 104px;
+        padding-bottom: 104px;
+    }
 }
 
 .about-suptitle {
@@ -217,25 +222,26 @@
 /* ===================== WHAT-IS =====================*/
 
 .what-is-section {        
+    padding-top: 60px;
     padding-bottom: 60px;
+    
     @media only screen and (min-width: 768px) {
-    background-image: url("../images/what-is/bg-what-is.png");
-    background-position: center top;
-    background-repeat: no-repeat;
-    padding-bottom: 0;
+        background-image: url("../images/what-is/bg-what-is.png");
+        background-position: center top;
+        background-repeat: no-repeat;
+        padding-top: 0;
+        padding-bottom: 0;
 }
 }
 
-.what-is-wrapper {
-    
+.what-is-container {    
     display: flex;
     justify-content: space-between;
     align-items: center;
-    text-align: right;
+    text-align: right;    
 }
 
 .what-is-left-wrapper{
-
     @media only screen and (max-width: 767px) {
         display: none;
     }
